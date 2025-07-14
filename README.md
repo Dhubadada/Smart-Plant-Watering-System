@@ -24,11 +24,6 @@ An automated plant watering system with real-time soil monitoring and remote con
 | Jumper Wires | 10+ |
 | 9V Battery + Connector | 1 |
 
-## 🔌 Circuit Diagram & Connections
-
-### Wiring Diagram
-![Circuit Diagram](https://i.imgur.com/CircuitDiagram.png)
-
 ### Connection Table
 | NodeMCU | Connected To |
 |---------|-------------|
@@ -73,13 +68,13 @@ An automated plant watering system with real-time soil monitoring and remote con
 | V1 | Pump Control | Integer | 0-1 |
 
 #### Web Dashboard:
-![Blynk Web Dashboard](https://i.imgur.com/WebDashboard.png)
 - Add SuperChart widget for moisture history
 - Add Button widget for manual control
 - Add Label widget for status display
 
 #### Mobile Dashboard:
-![Blynk Mobile Dashboard](https://i.imgur.com/MobileDashboard.jpg)
+![Blynk Mobile Dashboard]<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/a6a82cf2-013e-4b8a-894f-20a1488e4409" />
+
 
 ### 3. Uploading the Code
 1. Install required libraries:
