@@ -3,17 +3,15 @@
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 
-//Initialize the LCD display
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
-char auth[] = "";//Enter your Auth token
-char ssid[] = "";//Enter your WIFI name
-char pass[] = "";//Enter your WIFI password
+char auth[] = "JZFHoPeSfbXhVnZmVydViXmwvMuNDsFTMN";
+char ssid[] = "dhruba12";
+char pass[] = "#dada";
 
 BlynkTimer timer;
 bool Relay = 0;
 
-//Define component pins
 #define sensor A0
 #define waterPump D3
 
@@ -35,11 +33,10 @@ void setup() {
   }
   lcd.clear();
 
-  //Call the function
   timer.setInterval(100L, soilMoistureSensor);
 }
 
-//Get the button value
+
 BLYNK_WRITE(V1) {
   Relay = param.asInt();
 
@@ -54,7 +51,6 @@ BLYNK_WRITE(V1) {
   }
 }
 
-//Get the soil moisture values
 void soilMoistureSensor() {
   int value = analogRead(sensor);
   value = map(value, 0, 1024, 0, 100);
@@ -69,6 +65,6 @@ void soilMoistureSensor() {
 }
 
 void loop() {
-  Blynk.run();//Run the Blynk library
-  timer.run();//Run the Blynk timer
+  Blynk.run();
+  timer.run();
 }
