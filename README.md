@@ -1,6 +1,6 @@
 # 🌱 Smart Plant Watering System with NodeMCU ESP8266 and Blynk IoT
 
-<img width="1024" height="1536" alt="ChatGPT Image Jul 14, 2025, 03_23_59 PM" src="https://github.com/user-attachments/assets/2bf91d4b-c45c-4787-822d-deddbd8f832f" />
+<img width="102" height="153" alt="ChatGPT Image Jul 14, 2025, 03_23_59 PM" src="https://github.com/user-attachments/assets/2bf91d4b-c45c-4787-822d-deddbd8f832f" />
 
 
 An automated plant watering system with real-time soil monitoring and remote control via Blynk IoT platform.
